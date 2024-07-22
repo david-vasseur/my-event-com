@@ -4,7 +4,7 @@ import { useSession } from 'next-auth/react';
 import React, { useEffect, useState } from 'react';
 import * as Yup from 'yup';
 
-const page =  () => {
+const Page =  () => {
     const { data: session, status } = useSession();
     const [user, setUser] = useState<{age: number |null, firstname: string | null, lastname: string |null, username: string, description: string | null}>();
     const [view, setView] = useState(false);
@@ -113,4 +113,4 @@ const page =  () => {
     );
 };
 
-export default page;
+export default Page;

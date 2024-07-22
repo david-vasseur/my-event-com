@@ -2,7 +2,7 @@ import LoginForm from '@/components/Form/LoginForm';
 import Link from 'next/link';
 import React from 'react';
 
-const page = () => {
+const Page = () => {
     return (
         <div>
             <LoginForm />
@@ -10,4 +10,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

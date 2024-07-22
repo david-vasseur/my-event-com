@@ -94,7 +94,7 @@ const SignInForm = () => {
                     <Field as="textarea" name="description" className="rounded-[2rem] bg-slate-400 opacity-75 p-2 text-blue-700 font-semibold outline-blue-700 shadow-custom" />
                     <ErrorMessage name="description" className="text-red-700 font-semibold" component="div" />
                     <div className="flex justify-center mt-[2rem]">
-                        <button type="submit" className="bg-blue-700 rounded-[2rem] p-2 w-[10rem] hover:shadow-button transition-all duration-200">S'inscrire</button>
+                        <button type="submit" className="bg-blue-700 rounded-[2rem] p-2 w-[10rem] hover:shadow-button transition-all duration-200">S&apos;inscrire</button>
                     </div>
                 </Form>
             </Formik>

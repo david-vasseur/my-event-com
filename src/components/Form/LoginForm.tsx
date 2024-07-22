@@ -69,7 +69,7 @@ const LoginForm = () => {
             <div className="flex gap-2 mt-[5rem]">
                 <p>Pas encore inscrit ?</p>
                 <Link className="text-blue-700 underline-1 underline-blue-700" href="/connect/sign">Cliquer ici</Link>
-                <p>pour s'inscrire...</p>
+                <p>pour s&apos;inscrire...</p>
             </div>
             <div>
                 {messages.length > 0 && (

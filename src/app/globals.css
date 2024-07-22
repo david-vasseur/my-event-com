@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.header-background {
+  background: linear-gradient(133deg, rgba(30,58,138,1) 0%, rgba(30, 59, 138, 0.257) 50%, rgba(30,58,138,1) 100%);
+}
+
+.text-shadow2 {
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 5px rgb(51, 27, 187);
+}

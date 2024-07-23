@@ -21,11 +21,11 @@ const Header = () => {
                 <Link className="hover:text-gray-600 hover:scale-[1.1] hover:font-bold transition-all duration-200" href={"/"}>Acceuil</Link>
                 {session ? (
                     <>
-                        <Link className="hover:text-gray-600 hover:scale-[1.1] hover:font-bold transition-all duration-200" href={"/event"}>Mes évenements</Link>
+                        <Link className="hover:text-gray-600 hover:scale-[1.1] hover:font-bold transition-all duration-200" href={"/events"}>Mes évenements</Link>
                         <Link className="hover:text-gray-600 hover:scale-[1.1] hover:font-bold transition-all duration-200" href={"/profile"}>Mon profil</Link>
                         <button
                             className="hover:text-gray-600 hover:scale-[1.1] hover:font-bold transition-all duration-200 text-slate-500"
-                            onClick={() => signOut()}
+                            onClick={() => signOut({ callbackUrl: '/' })}
                         >
                             Se déconnecter
                         </button>

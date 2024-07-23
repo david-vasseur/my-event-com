@@ -65,17 +65,10 @@ const Page =  () => {
 
     if (!session || !user) {
         return (
-            <h2 className="text-[2rem] font-extrabold text-blue-700 text-shadow">Votre session a expiré</h2>
+            <h2 className="text-[2rem] font-extrabold text-blue-700 text-shadow">Chargement en cours</h2>
         )
     }
 
-    
-
-    if (!user) {
-        return (
-            <h2 className="text-[2rem] font-extrabold text-blue-700 text-shadow">Votre session a expiré</h2>
-        )
-    }
      
     return (
         <div className="flex flex-col items-center justify-center mt-[5rem] gap-8">

@@ -66,12 +66,12 @@ const Page =  () => {
     if (!session || !user) {
         return (
             <div className="flex flex-col items-center justify-center mt-[5rem] gap-8">
-                <h2 className="text-[2rem] font-extrabold bg-slate-700 rounded-[2rem] w-[10rem] h-[2rem]"></h2>
+                <h2 className="text-[2rem] font-extrabold bg-slate-700 rounded-[2rem] w-[18rem] h-[4rem]"></h2>
                 <div className="flex gap-5 justify-center items-center">
-                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
-                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
-                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
-                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[8rem] h-[3rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[8rem] h-[3rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[8rem] h-[3rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[8rem] h-[3rem]"></span>
                 </div>
             </div>
         )

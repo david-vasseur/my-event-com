@@ -22,18 +22,17 @@ const authOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.username || !credentials?.password) {
-          throw new Error('Email and password are required');
+          throw new Error('Email et mot de passe obligatoire');
         }
 
         const user = await prisma.user.findUnique({
           where: { username: credentials.username },
         });
-        console.log(user);
         
         if (user && await bcrypt.compare(credentials.password, user.password)) {
           return { id: user.id.toString(), email: user.username, name: user.firstname } as IUser;
         } else {
-          throw new Error('Invalid email or password');
+          throw new Error('Mot de passe incorrect');
         }
       },
     }),
@@ -44,11 +43,10 @@ const authOptions = {
   callbacks: {
     async session({ session, token }: { session: Session, token: JWT }) {
       if (token) {
-        // Assurez-vous que token.user contient les informations correctes
         session.user = {
-          id: token.sub as string, // Token ID utilisé pour identifier l'utilisateur
-          email: token.email as string, // Email stocké dans le token
-          name: token.name as string, // Nom stocké dans le token
+          id: token.sub as string, 
+          email: token.email as string, 
+          name: token.name as string, 
         } as NextAuthUser;
       }
       console.log("Session après modification", session);
@@ -64,7 +62,6 @@ const authOptions = {
       session?: any;
     }) {
       if (user) {
-        // Ajoutez les informations de l'utilisateur au token JWT lors de la connexion
         token.sub = user.id;
         token.email = user.email as string;
         token.name = user.name as string;

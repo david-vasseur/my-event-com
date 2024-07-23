@@ -65,7 +65,15 @@ const Page =  () => {
 
     if (!session || !user) {
         return (
-            <h2 className="text-[2rem] font-extrabold text-blue-700 text-shadow">Chargement en cours</h2>
+            <div className="flex flex-col items-center justify-center mt-[5rem] gap-8">
+                <h2 className="text-[2rem] font-extrabold bg-slate-700 rounded-[2rem] w-[8rem]"></h2>
+                <div className="flex gap-5 justify-center items-center">
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
+                    <span className="pl-4 pr-4 p-2 bg-slate-700 rounded-[2rem] w-[5rem]"></span>
+                </div>
+            </div>
         )
     }
 
